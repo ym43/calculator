@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div id="content">
+        <input readonly id="CalcDi">
+        <div id="row1">
+            <button onclick="appendNumber('/')">/</button>
+            <button id="number" onclick="appendNumber('7')">7</button>
+            <button id="number" onclick="appendNumber('8')">8</button>
+            <button id="number" onclick="appendNumber('9')">9</button>
+        </div>
+        <div id="row2">
+            <button onclick="appendNumber('*')">&times;</button>
+            <button id="number" onclick="appendNumber('4')">4</button>
+            <button id="number" onclick="appendNumber('5')">5</button>
+            <button id="number" onclick="appendNumber('6')">6</button>
+        </div>
+        <div id="row3">
+            <button>+</button>
+            <button id="number" onclick="appendNumber('1')">1</button>
+            <button id="number" onclick="appendNumber('2')">2</button>
+            <button id="number" onclick="appendNumber('3')">3</button>
+        </div>
+        <div id="row4">
+            <button onclick="appendNumber('-')">-</button >
+            <button id="number" onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button id="equal" onclick="equal()">=</button>
+        </div>
+        <div id="row5">
+            <button onclick="clearall()">C</button>
+            <button onclick="appendNumber('(')">(</button>
+            <button onclick="appendNumber(')')">)</button>
+            <button onclick="appendNumber('%')">%</button>
+        </div>
+    </div>
+</body>
+</html>
